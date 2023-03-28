@@ -20,7 +20,7 @@ export const UserWrapper = styled.View`
   padding: 0 24px;
   align-items: center;
   justify-content: space-between;
-  margin-top: ${getStatusBarHeight() + RFValue(28)}px;
+  margin-top: ${getStatusBarHeight() + RFValue(1)}px;
 `;
 
 export const CarInfo = styled.View`
@@ -43,15 +43,24 @@ export const LogoutButton = styled.View``;
 
 export const LogoutIcon = styled(MaterialIcons)`
   color: ${({ theme }) => theme.colors.secondary};
-  font-size: ${RFValue(24)}px;
-
+  font-size: ${RFValue(32)}px;
 `;
 
 export const ImageBack = styled(ImageBackground)`
   justify-content: center;
   width: 70%;
-  height: 72%;
+  height: 70%;
 `;
 
 export const Image = styled(ImageBasic)``;
 
+export const HighlightCards = styled.ScrollView.attrs({
+  horizontal: true,
+  showsHorizontalScrollIndicator: false,
+  contentContainerStyle: { paddingLeft: 24 }
+})`
+  width: 100%;
+  position: absolute;
+  margin-top: ${getStatusBarHeight() + RFValue(90)}px;
+  border-radius: 20px;
+`;
