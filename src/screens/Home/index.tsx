@@ -1,4 +1,5 @@
 import { HighlightCard } from '../../components/HighlightCard';
+import { TransactionCard } from '../../components/TransactionCard';
 import { 
   Container,
   Header,
@@ -11,6 +12,8 @@ import {
   ImageBack,
   Image,
   HighlightCards,
+  Transactions,
+  Title 
 } from './styles';
 
 export function Home() {
@@ -41,8 +44,8 @@ export function Home() {
       <HighlightCards>
         <HighlightCard 
           title='Álcool'
-          consumption='7,00 km/l'
-          cost='R$ 0,34 / km'
+          consumption='3 km/L'
+          cost='R$ 5,15/L'
           lastTransaction='Última entrada dia 13 de abril'
           type='alcohol'
         />
@@ -61,6 +64,10 @@ export function Home() {
           type='total'
         />
       </HighlightCards>
+
+      <Transactions>
+        <TransactionCard />
+      </Transactions>
     </Container>
   );
 }

@@ -13,6 +13,7 @@ export const Container = styled.View<TypeProps>`
   width: ${RFValue(300)}px;
   padding: 19px 23px;
   padding-bottom: ${RFValue(42)}px;
+  padding-top: ${RFValue(42)}px;
   margin-right: 16px;
   align-items: center;
   border-radius: 20px;
@@ -47,8 +48,8 @@ export const ConsumptionLabel = styled.Text<TypeProps>`
 export const ConsumptionValue = styled.Text<TypeProps>`
   color: ${({ theme, type }) => 
     type === 'gasoline' ? theme.colors.card_text_2 : theme.colors.card_text_1};
-  font-family: ${({ theme }) => theme.fonts.semi_bold};
-  font-size: ${RFValue(16)}px;
+  font-family: ${({ theme }) => theme.fonts.racing};
+  font-size: ${RFValue(38)}px;
 `;
 
 export const Cost = styled.View`
@@ -67,6 +68,6 @@ export const CostLabel = styled.Text<TypeProps>`
 export const CostValue = styled.Text<TypeProps>`
   color: ${({ theme, type }) => 
     type === 'gasoline' ? theme.colors.card_text_2 : theme.colors.card_text_1};
-  font-family: ${({ theme }) => theme.fonts.semi_bold};
-  font-size: ${RFValue(16)}px;
+  font-family: ${({ theme }) => theme.fonts.racing};
+  font-size: ${RFValue(38)}px;
 `;

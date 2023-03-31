@@ -19,6 +19,10 @@ export default {
     regular: 'Poppins_400Regular',
     medium: 'Poppins_500Medium',
     semi_bold: 'Poppins_600SemiBold',
-    bold: 'Poppins_700Bold'
+    bold: 'Poppins_700Bold',
+    bangers: 'Bangers_400Regular',
+    racing: 'RacingSansOne_400Regular',
+    sans: 'OpenSans_400Regular',
+    sans_bold: 'OpenSans_700Bold',
   }
 }

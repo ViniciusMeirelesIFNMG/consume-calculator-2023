@@ -34,12 +34,8 @@ export function HighlightCard({
 
   return (
     <Container type={type}>
-      <Header>
-        <Title type={type}>{title}</Title>
-      </Header>
-
       <Consumption>
-        <ConsumptionLabel type={type}>Consumo médio: </ConsumptionLabel>
+        <ConsumptionLabel type={type}>Consumo {title}</ConsumptionLabel>
       </Consumption>
 
       <Consumption>
@@ -47,7 +43,7 @@ export function HighlightCard({
       </Consumption>
 
       <Cost>
-        <CostLabel type={type}>Custo por km: </CostLabel>
+        <CostLabel type={type}>Preço Médio do Litro </CostLabel>
       </Cost>
 
       <Cost>

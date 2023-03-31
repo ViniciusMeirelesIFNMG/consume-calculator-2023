@@ -64,3 +64,15 @@ export const HighlightCards = styled.ScrollView.attrs({
   margin-top: ${getStatusBarHeight() + RFValue(90)}px;
   border-radius: 20px;
 `;
+
+export const Transactions = styled.View`
+  flex: 1;
+  padding: 0 24px;
+  margin-top: ${RFValue(95)}px;
+`;
+
+export const Title = styled.Text`
+  color: ${({ theme }) => theme.colors.text};
+  font-size: ${RFValue(18)}px;
+  font-family: ${({ theme }) => theme.fonts.regular};
+`;
